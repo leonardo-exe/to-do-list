@@ -1,15 +1,5 @@
 //vetor de objetos que guarda todos os dados passados em formulário
-function carregaDados () {
-    try {
-        const dados = JSON.parse(localStorage.getItem('to-do list')) || [{dsem: 1}]
-        return dados
-    }
-    catch (erro) {
-        console.log(erro)
-        return []
-    }
-}
-const dados = carregaDados()
+const dados = JSON.parse(localStorage.getItem('to-do list') || [{dsem: 1}]) || [{dsem: 1}]
 const data = new Date()
 document.querySelector('span#ano').textContent = `${data.getFullYear()}`
 const diaHoje = data.getDate()

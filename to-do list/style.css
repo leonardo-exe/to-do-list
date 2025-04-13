@@ -1,0 +1,155 @@
+html {
+    background-color: rgb(75, 0, 85);
+}
+body {
+    padding: 10px;
+    border: solid, 1px;
+    border-radius: 20px;
+    background-color: rgb(14, 136, 14);
+    font-family: cursive;
+}
+input {
+    font-family: cursive;
+    background-color: rgb(252, 181, 110);
+    font-size: large;
+    cursor: pointer;
+
+}
+header {
+    margin-left: 37%;
+}
+.select {
+    font-family: cursive;
+    background-color: rgb(252, 181, 110);
+    height: 30px;
+    margin-left: 1.7px;
+    border-radius: 20px;
+    width: 200px;
+}
+.select option {
+    text-align: center;
+}
+#select1 {
+    display: flex;
+}
+#add {
+    height: 50px;
+    width: 160px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+#add:hover {
+    height: 60px;
+    width: 170px;
+}
+#form {
+    position: fixed;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(75, 0, 85);
+    left: 30.5%;
+    top: 150px;
+}
+#form input {
+    border-radius: 20px;
+    border: 1px solid;
+}
+#check {
+    margin-top: 0px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+#color {
+    width: 200px;
+    height: 30px;
+    margin-right: 34px;
+}
+label {
+    color: white;
+    position: fixed;
+}
+#repete {
+    background-color: rgb(75, 0, 85);
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    position: fixed;
+    margin-left: 28%;
+    top: 32px;
+    border-radius: 20px;
+    border: 1px solid;
+    height: 80%;
+}
+#confirm {
+    border-radius: 20px;
+    border: 1px solid; 
+    margin-top: 20px;
+}
+#repete input {
+    margin-top: 20px;
+}
+.filha {
+    background-color: rgb(252, 181, 110);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: large;
+    display: flex;
+}
+.neta {
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.neta:hover {
+    color: azure;
+}
+footer {
+    display: block;
+    text-align: center;
+}
+#cancel {
+    position: fixed;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(75, 0, 85);
+    left: 30.5%;
+    top: 150px; 
+    text-align: center;  
+}
+#cancel input {
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    width: 400px;
+}
+#cancel input:hover {
+    background-color: red;
+    transition-duration: 2s;
+}
+#cab {
+    display: flex;
+    gap: 20px;
+}
+#cab div {
+    background-color: rgb(252, 181, 110);
+    border: 1px solid;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 12px;
+}

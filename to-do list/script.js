@@ -267,3 +267,4 @@ const ano = document.querySelector('input#a')
 semana.addEventListener('click', exclusivo(mes, ano, 7))
 mes.addEventListener('click', exclusivo(semana, ano, diasNOmes(mesHoje)))
 ano.addEventListener('click', exclusivo(semana, mes, bissexto))
+// testando segunda commit 

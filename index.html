@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>to-do list</title>
+    <link rel="shortcut icon" href="assets/lista-de-tarefas.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>
+            Minhas tarefas <img src="assets/verificar.png" style="height: 30px;">
+        </h1>
+    </header>
+    <div id="cab">
+        <input type="button" value="Adicionar tarefa" onclick="chamaForm()" id="add">
+        <div>
+            Mostrar tarefas do(a) próximo(a):
+            <input type="checkbox" id="s">semana
+            <input type="checkbox" id="m">mês
+            <input type="checkbox" id="a">ano
+        </div>
+    </div>
+    <script>
+        function chamaForm() {
+            document.querySelector('div#form').style.display = document.querySelector('div#form').style.display === 'flex' ? 'none' : 'flex'
+        }
+    </script>
+    <br><br>
+    <div id="form" style="display: none;">
+        <input placeholder="  nome do evento/tarefa" class="input">
+        <input placeholder="  hora (formato 00:00)" class="input">
+        <div id="select1">
+            <select class="select">
+                <option>dia</option>
+            </select>
+            <select class="select">
+                <option>mês</option>
+            </select>
+        </div>
+        <div>
+            <input type="color" id="color" value="#ffffff">
+            <label for="color">cor para a tarefa</label>
+        </div>
+        <div>
+            <input type="checkbox" id="check">
+            <label for="check">repetir</label>
+        </div>
+        <input type="submit" value="adicionar" onclick="submete()">
+    </div>
+    <div id="repete" style="display: none;">
+        <h1 style="text-align: center;">Repetir em que dias da semana</h1>
+        <div>
+            <input type="checkbox" class="checkbox" value="1">domingo
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox" value="2">segunda
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox" value="3">terça
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox" value="4">quarta
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox" value="5">quinta
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox" value="6">sexta
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox" value="7">sábado
+        </div>
+        <input type="submit" value="confirma" onclick="fechaForm()" id="confirm">
+        <script>
+            function fechaForm() {
+                document.querySelector('div#repete').style.display = 'none'
+                document.querySelector('input#check').checked = false
+            }
+        </script><br><br>
+    </div>
+    <div id="mae">
+    </div>
+    <footer>
+        <i><p>&copy; Leonardo Picagevicz, <span id="ano"></span>. Todos os direitos reservados</p></i>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+</html>
